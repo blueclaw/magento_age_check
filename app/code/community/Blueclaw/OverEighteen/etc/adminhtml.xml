@@ -34,7 +34,7 @@
                         <children>
                             <config>
                                 <children>
-                                    <blueclaw_overeighteen module="split_test">
+                                    <blueclaw_overeighteen module="overeighteen">
                                         <title>Blueclaw Age Check</title>
                                     </blueclaw_overeighteen>
                                 </children>

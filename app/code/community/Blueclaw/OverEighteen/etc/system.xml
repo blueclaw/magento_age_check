@@ -28,7 +28,7 @@
 -->
 <config>
     <sections>
-        <blueclaw_overeighteen translate="label" module="split_test">
+        <blueclaw_overeighteen translate="label" module="overeighteen">
             <label>Blueclaw Age Check Settings</label>
             <tab>blueclawconfig</tab>
             <frontend_type>text</frontend_type>
