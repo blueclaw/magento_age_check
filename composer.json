@@ -1,0 +1,29 @@
+{
+    "name": "blueclaw/overEighteen",
+    "description": "Prompts visitors to confirm they are of legal age before allowing them to view your site.",
+    "type":"magento-module",
+    "license": "propriety",
+    "authors": [
+        {
+            "name": "John Hickling",
+            "email": "john@blueclaw.co.uk"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.0-dev"
+        },
+        "map": [
+            ["app/etc/modules/Blueclaw_OverEighteen.xml", "app/etc/modules/Blueclaw_OverEighteen.xml"],
+            ["app/design/frontend/base/default/layout/blueclaw_overeighteen.xml","app/design/frontend/base/default/layout/blueclaw_overeighteen.xml"],
+            ["app/design/frontend/base/default/template/blueclaw/overeighteen", "app/design/frontend/base/default/template/blueclaw/overeighteen"],
+            ["js/blueclaw/overeighteen", "js/blueclaw/overeighteen"],
+            ["skin/frontend/base/default/blueclaw/overeighteen", "skin/frontend/base/default/blueclaw/overeighteen"],
+            ["app/code/community/Blueclaw/OverEighteen", "app/code/community/Blueclaw/OverEighteen"]
+        ]
+    }
+}
