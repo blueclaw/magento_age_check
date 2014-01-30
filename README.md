@@ -19,7 +19,7 @@ All settings found under System > Configuration > Web > Blueclaw Age Check Setti
 
 ### Magento CE 1.5.x, 1.6.x, 1.7.x, 1.8.x
 
-Install with [modgit](https://github.com/blueclaw/magento_age_check.git):
+Install with [modgit](https://github.com/jreinke/modgit):
 
     $ cd /path/to/magento
     $ modgit init
