@@ -28,19 +28,12 @@
 -->
 <config>
     <sections>
-        <blueclaw_overeighteen translate="label" module="overeighteen">
-            <label>Blueclaw Age Check Settings</label>
-            <tab>blueclawconfig</tab>
-            <frontend_type>text</frontend_type>
-            <sort_order>3800</sort_order>
-            <show_in_default>1</show_in_default>
-            <show_in_website>1</show_in_website>
-            <show_in_store>1</show_in_store>
+        <web>
             <groups>
-                <general translate="label">
-                    <label>General Settings</label>
+                <age_check translate="label">
+                    <label>Blueclaw Age Check Settings</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>10</sort_order>
+                    <sort_order>60</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>    
@@ -100,24 +93,8 @@
                         </underage_message>
 
                     </fields>
-                </general>
-                
+                </age_check>                
             </groups>
-        </blueclaw_overeighteen>
-        <blueclaw_master>
-            <groups>
-                <installedlist>
-                    <fields>
-                        <Blueclaw_OverEighteen>
-                            <label>Blueclaw_OverEighteen</label>
-                            <frontend_type>text</frontend_type>
-                            <frontend_model>blueclawmaster/adminhtml_version</frontend_model>
-                            <sort_order>768</sort_order>
-                            <show_in_default>1</show_in_default>
-                        </Blueclaw_OverEighteen>
-                    </fields>
-                </installedlist>
-            </groups>
-         </blueclaw_master>
+        </web>        
     </sections>  
 </config>

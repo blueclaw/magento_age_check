@@ -31,7 +31,7 @@ class Blueclaw_OverEighteen_Block_Check extends Mage_Core_Block_Template
      */
      protected function _toHtml()
      {
-        if(! Mage::getStoreConfig('blueclaw_overeighteen/general/enabled') ||  Mage::helper('overeighteen')->isVerified() )
+        if(! Mage::getStoreConfig('web/age_check/enabled') ||  Mage::helper('overeighteen')->isVerified() )
             return '';
         else
             return parent::_toHtml();

@@ -25,20 +25,20 @@
  */
 ?>
 <div id="ageVerificationCheck">
-    <h5><?php echo Mage::getStoreConfig('blueclaw_overeighteen/general/header'); ?></h5>
-    <p><?php echo Mage::getStoreConfig('blueclaw_overeighteen/general/message'); ?></p>
+    <h5><?php echo Mage::getStoreConfig('web/age_check/header'); ?></h5>
+    <p><?php echo Mage::getStoreConfig('web/age_check/message'); ?></p>
     <button id="verifyAge">
-        <?php echo Mage::getStoreConfig('blueclaw_overeighteen/general/button'); ?>
+        <?php echo Mage::getStoreConfig('web/age_check/button'); ?>
     </button>
-    <?php if(Mage::getStoreConfig('blueclaw_overeighteen/general/show_underage')): ?>
+    <?php if(Mage::getStoreConfig('web/age_check/show_underage')): ?>
     <button id="underAge">
-        <?php echo Mage::getStoreConfig('blueclaw_overeighteen/general/button_underage'); ?>
+        <?php echo Mage::getStoreConfig('web/age_check/button_underage'); ?>
     </button>
     <?php endif; ?>
 </div>
-<?php if(Mage::getStoreConfig('blueclaw_overeighteen/general/show_underage')): ?>
+<?php if(Mage::getStoreConfig('web/age_check/show_underage')): ?>
 <div id="underAgeMsg" style="display:none;">
-    <p><?php echo Mage::getStoreConfig('blueclaw_overeighteen/general/underage_message'); ?></p>
+    <p><?php echo Mage::getStoreConfig('web/age_check/underage_message'); ?></p>
     <button id="underAgeMsgBtn">
         <?php echo $this->__('OK'); ?>
     </button>
