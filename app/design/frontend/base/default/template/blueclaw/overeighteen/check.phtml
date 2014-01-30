@@ -37,7 +37,7 @@
     <?php endif; ?>
 </div>
 <?php if(Mage::getStoreConfig('blueclaw_overeighteen/general/show_underage')): ?>
-<div id="underAgeMsg">
+<div id="underAgeMsg" style="display:none;">
     <p><?php echo Mage::getStoreConfig('blueclaw_overeighteen/general/underage_message'); ?></p>
     <button id="underAgeMsgBtn">
         <?php echo $this->__('OK'); ?>

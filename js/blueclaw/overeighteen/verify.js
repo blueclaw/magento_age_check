@@ -4,7 +4,7 @@ document.observe("dom:loaded", function() {
         $('ageVerificationCheck').remove();
         $('ageVerificationCheckBG').remove(); 
     } else {
-        $('underAgeMsg').hide();
+        
         $('verifyAge').on('click', 'button', function(){      
               $('ageVerificationCheck').remove();
               $('ageVerificationCheckBG').remove();        
@@ -18,9 +18,6 @@ document.observe("dom:loaded", function() {
             $('underAgeMsg').hide();
             $('ageVerificationCheck').removeClassName('faded');            
         });
-        
-        
-    
     
     }
 });
