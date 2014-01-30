@@ -11,22 +11,57 @@
     left: 0;
     z-index: 199;
 }
+#underAgeMsg{
+    background: #fff;
+    border: 2px solid #cecece;
+    min-height: 120px;
+    
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    margin-left: -150px;
+    margin-top: -60px;
+    padding: 20px 40px;
+    text-align: center;
+    width: 300px;
+    @include box-sizing(border-box);
+    @include box-shadow(#666 3px 3px 3px);
+    z-index: 2001; 
+    button{
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px 15px;
+        
+        text-decoration: none;        
+        @include background(linear-gradient(#27A727, #1E841E));
+        @include box-shadow(#6B6B6B 0px 1px 2px);
+        @include border-radius(30px);
+        border: 1px solid #158c1a;       
+        
+        &:hover{
+            @include background(linear-gradient(#49C949, #40A640));
+            border: 1px solid #40A640;
+        }
+    }
+}
 #ageVerificationCheck{
     background: #fff;
-    border: 2px solid #cecece;   
-    height: 300px;
+    border: 2px solid #cecece;
+    @include box-shadow(#666 3px 3px 3px);
+    min-height: 250px;
     z-index: 2000;
     top: 50%;
     left: 50%;
     position: fixed;
-    margin-left: -300px;
-    margin-top: -200px;
+    margin-left: -250px;
+    margin-top: -150px;
     padding: 40px;
     text-align: center;
     width: 500px;
     @include box-sizing(border-box);
 
-    
+        
     h5{
         font-size: 20px;
     }
@@ -50,6 +85,11 @@
             @include background(linear-gradient(#49C949, #40A640));
             border: 1px solid #40A640;
         }
+        
+        &#underAge{
+            border: 1px solid #E00;
+            @include background(linear-gradient(#E00 , #A00 ));
+        }
 
     }
     
@@ -63,4 +103,9 @@
         height: 80%;
         margin-top: 0;
     } 
+    
+    &.faded{
+        background: #aeaeae;
+        border-color: #aeaeae;
+    }
 }

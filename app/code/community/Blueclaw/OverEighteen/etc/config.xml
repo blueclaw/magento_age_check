@@ -59,6 +59,9 @@
                 <header><![CDATA[Verify age to continue]]></header>
                 <message><![CDATA[To use this website you must be aged 18 years or over. Please verify your age before entering the site.]]></message>
                 <button><![CDATA[I am over 18]]></button>
+                <show_underage>0</show_underage>
+                <button_underage><![CDATA[I am under 18]]></button_underage>
+                <underage_message><![CDATA[You must be over 18 years of age to use this website.]]></underage_message>
             </general>
         </blueclaw_overeighteen>
     </default>

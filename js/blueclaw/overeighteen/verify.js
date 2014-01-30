@@ -4,10 +4,23 @@ document.observe("dom:loaded", function() {
         $('ageVerificationCheck').remove();
         $('ageVerificationCheckBG').remove(); 
     } else {
+        $('underAgeMsg').hide();
         $('verifyAge').on('click', 'button', function(){      
               $('ageVerificationCheck').remove();
               $('ageVerificationCheckBG').remove();        
               Mage.Cookies.set('ageverified', 1);
         });
+        $('underAge').on('click', 'button', function(){
+            $('underAgeMsg').show();
+            $('ageVerificationCheck').addClassName('faded');
+        });
+        $('underAgeMsgBtn').on('click', 'button', function(){
+            $('underAgeMsg').hide();
+            $('ageVerificationCheck').removeClassName('faded');            
+        });
+        
+        
+    
+    
     }
 });

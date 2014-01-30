@@ -10,16 +10,65 @@
   z-index: 199;
 }
 
+#underAgeMsg {
+  background: #fff;
+  border: 2px solid #cecece;
+  min-height: 120px;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  margin-left: -150px;
+  margin-top: -60px;
+  padding: 20px 40px;
+  text-align: center;
+  width: 300px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: #666666 3px 3px 3px;
+  -webkit-box-shadow: #666666 3px 3px 3px;
+  box-shadow: #666666 3px 3px 3px;
+  z-index: 2001;
+}
+#underAgeMsg button {
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  text-decoration: none;
+  background: -moz-linear-gradient(#27a727, #1e841e);
+  background: -o-linear-gradient(#27a727, #1e841e);
+  background: -webkit-linear-gradient(#27a727, #1e841e);
+  background: linear-gradient(#27a727, #1e841e);
+  -moz-box-shadow: #6b6b6b 0px 1px 2px;
+  -webkit-box-shadow: #6b6b6b 0px 1px 2px;
+  box-shadow: #6b6b6b 0px 1px 2px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  border: 1px solid #158c1a;
+}
+#underAgeMsg button:hover {
+  background: -moz-linear-gradient(#49c949, #40a640);
+  background: -o-linear-gradient(#49c949, #40a640);
+  background: -webkit-linear-gradient(#49c949, #40a640);
+  background: linear-gradient(#49c949, #40a640);
+  border: 1px solid #40A640;
+}
+
 #ageVerificationCheck {
   background: #fff;
   border: 2px solid #cecece;
-  height: 300px;
+  -moz-box-shadow: #666666 3px 3px 3px;
+  -webkit-box-shadow: #666666 3px 3px 3px;
+  box-shadow: #666666 3px 3px 3px;
+  min-height: 250px;
   z-index: 2000;
   top: 50%;
   left: 50%;
   position: fixed;
-  margin-left: -300px;
-  margin-top: -200px;
+  margin-left: -250px;
+  margin-top: -150px;
   padding: 40px;
   text-align: center;
   width: 500px;
@@ -60,6 +109,13 @@
   background: linear-gradient(#49c949, #40a640);
   border: 1px solid #40A640;
 }
+#ageVerificationCheck button#underAge {
+  border: 1px solid #E00;
+  background: -moz-linear-gradient(#ee0000, #aa0000);
+  background: -o-linear-gradient(#ee0000, #aa0000);
+  background: -webkit-linear-gradient(#ee0000, #aa0000);
+  background: linear-gradient(#ee0000, #aa0000);
+}
 @media only screen and (max-width: 500px) {
   #ageVerificationCheck {
     left: 10%;
@@ -73,4 +129,8 @@
     height: 80%;
     margin-top: 0;
   }
+}
+#ageVerificationCheck.faded {
+  background: #aeaeae;
+  border-color: #aeaeae;
 }

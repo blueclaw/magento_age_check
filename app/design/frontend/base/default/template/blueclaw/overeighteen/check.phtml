@@ -30,6 +30,19 @@
     <button id="verifyAge">
         <?php echo Mage::getStoreConfig('blueclaw_overeighteen/general/button'); ?>
     </button>
+    <?php if(Mage::getStoreConfig('blueclaw_overeighteen/general/show_underage')): ?>
+    <button id="underAge">
+        <?php echo Mage::getStoreConfig('blueclaw_overeighteen/general/button_underage'); ?>
+    </button>
+    <?php endif; ?>
 </div>
+<?php if(Mage::getStoreConfig('blueclaw_overeighteen/general/show_underage')): ?>
+<div id="underAgeMsg">
+    <p><?php echo Mage::getStoreConfig('blueclaw_overeighteen/general/underage_message'); ?></p>
+    <button id="underAgeMsgBtn">
+        <?php echo $this->__('OK'); ?>
+    </button>
+</div>
+<?php endif; ?>
 <div id="ageVerificationCheckBG">
 </div>
