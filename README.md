@@ -5,3 +5,5 @@
 ## Features
 
 * Prompts visitors to confirm they are of legal age before allowing them to view your site.
+
+![Over Eighteen](http://www.blueclawsearch.co.uk/wp-content/uploads/2012/08/over-eighteen1.jpg)
