@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Blueclaw Conversions Limited
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the License Agreement
+ * that is bundled with this package in the file LICENCE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * www.blueclawecommerce.co.uk/store/terms-conditions
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to info@blueclaw.co.uk so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file. If you wish to customize this extension for your
+ * needs please contact us through www.blueclawecommerce.co.uk.
+ *
+ * @category    Blueclaw
+ * @package     Blueclaw_OverEighteen
+ * @copyright   Copyright (c) 2014 Blueclaw Conversions Ltd. (http://www.blueclawecommerce.co.uk)
+
+ * @author      John Hickling <john@blueclaw.co.uk>
+ * @license     http://blueclawecommerce.co.uk/store/terms-conditions Blueclaw Conversions Ltd End User Licence Agreement
+ */
+-->
+<layout version="0.1.0">
+    <default>
+        
+        <action block="head" method="addJs">
+            <stylesheet helper="overeighteen/data/getJS" />
+        </action>
+        <action block="head" method="addCss">
+            <stylesheet helper="overeighteen/data/getCSS" />
+        </action>
+        <reference name="before_body_end">
+            <block type="overeighteen/check" template="blueclaw/overeighteen/check.phtml" />
+        </reference>
+    </default>
+</layout>

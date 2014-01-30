@@ -1,0 +1,65 @@
+@import "compass";
+
+#ageVerificationCheckBG{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    top: 0;
+    left: 0;
+    z-index: 199;
+}
+#ageVerificationCheck{
+    background: #fff;
+    border: 2px solid #cecece;   
+    height: 300px;
+    z-index: 2000;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    margin-left: -300px;
+    margin-top: -200px;
+    padding: 40px;
+    width: 500px;
+    @include box-sizing(border-box);
+
+    
+    h5{
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+        margin: 2em 0;
+    }
+    button{
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        text-decoration: none;        
+        @include background(linear-gradient(#27A727, #1E841E));
+        @include box-shadow(#6B6B6B 0px 1px 2px);
+        @include border-radius(30px);
+        border: 1px solid #158c1a;       
+        
+        &:hover{
+            @include background(linear-gradient(#49C949, #40A640));
+            border: 1px solid #40A640;
+        }
+
+    }
+    
+    @media only screen and (max-width: 500px)  {
+        left: 10%;
+        width: 80%;
+        margin-left: 0;
+    }    
+    @media only screen and (max-height: 300px)  {
+        top: 10%;
+        height: 80%;
+        margin-top: 0;
+    } 
+}

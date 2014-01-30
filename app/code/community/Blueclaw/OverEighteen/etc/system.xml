@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Blueclaw Conversions Limited
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the License Agreement
+ * that is bundled with this package in the file LICENCE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * www.blueclawecommerce.co.uk/store/terms-conditions
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to info@blueclaw.co.uk so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file. If you wish to customize this extension for your
+ * needs please contact us through www.blueclawecommerce.co.uk.
+ *
+ * @category    Blueclaw
+ * @package     Blueclaw_OverEighteen
+ * @copyright   Copyright (c) 2014 Blueclaw Conversions Ltd. (http://www.blueclawecommerce.co.uk)
+
+ * @author      John Hickling <john@blueclaw.co.uk>
+ * @license     http://blueclawecommerce.co.uk/store/terms-conditions Blueclaw Conversions Ltd End User Licence Agreement
+ */
+-->
+<config>
+    <sections>
+        <blueclaw_overeighteen translate="label" module="split_test">
+            <label>Blueclaw Age Check Settings</label>
+            <tab>blueclawconfig</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>3800</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>    
+                    <fields>
+                        <enabled>
+                            <label>Enable Age Check:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <validate>validate-digits</validate>                       
+                        </enabled>
+                        
+                        <header>
+                            <label>Pop Up Header:</label>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>                                            
+                        </header>
+                        <message>
+                            <label>Pop Up Message:</label>
+                            <frontend_type>textarea</frontend_type>                            
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>                                            
+                        </message>
+                        <button>
+                            <label>Button Text:</label>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>                                            
+                        </button>
+
+                    </fields>
+                </general>
+                
+            </groups>
+        </blueclaw_overeighteen>
+        <blueclaw_master>
+            <groups>
+                <installedlist>
+                    <fields>
+                        <Blueclaw_OverEighteen>
+                            <label>Blueclaw_OverEighteen</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>blueclawmaster/adminhtml_version</frontend_model>
+                            <sort_order>768</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </Blueclaw_OverEighteen>
+                    </fields>
+                </installedlist>
+            </groups>
+         </blueclaw_master>
+    </sections>  
+</config>
