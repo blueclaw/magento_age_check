@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Blueclaw_OverEighteen>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Blueclaw_OverEighteen>
+    </modules>
+</config>
