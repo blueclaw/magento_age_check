@@ -21,7 +21,7 @@
     position: fixed;
     margin-left: -150px;
     margin-top: -60px;
-    padding: 20px 40px;
+    padding: 20px 30px;
     text-align: center;
     width: 300px;
     @include box-sizing(border-box);
@@ -43,6 +43,11 @@
             @include background(linear-gradient(#49C949, #40A640));
             border: 1px solid #40A640;
         }
+    }
+    
+    p{
+        font-size: 14px;
+        margin: 0 0 2em ;
     }
 }
 #ageVerificationCheck{

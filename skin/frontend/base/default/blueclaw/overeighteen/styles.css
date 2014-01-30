@@ -19,7 +19,7 @@
   position: fixed;
   margin-left: -150px;
   margin-top: -60px;
-  padding: 20px 40px;
+  padding: 20px 30px;
   text-align: center;
   width: 300px;
   -moz-box-sizing: border-box;
@@ -54,6 +54,10 @@
   background: -webkit-linear-gradient(#49c949, #40a640);
   background: linear-gradient(#49c949, #40a640);
   border: 1px solid #40A640;
+}
+#underAgeMsg p {
+  font-size: 14px;
+  margin: 0 0 2em;
 }
 
 #ageVerificationCheck {
